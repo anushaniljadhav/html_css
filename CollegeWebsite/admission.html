@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - MET Bhujbal Knowledge City</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="logo">MET Bhujbal Knowledge City</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="admission.html">Admission</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Join MET Bhujbal Knowledge City</h1>
+            <p>Start Your Journey to Excellence</p>
+        </div>
+    </section>
+
+    <!-- Admission Content -->
+    <section class="section">
+        <div class="container">
+            <h2>Admission Information</h2>
+            
+            <!-- Information Boxes -->
+            <div class="highlights">
+                <div class="highlight-box">
+                    <h4>📋 Requirements</h4>
+                    <p>High school diploma, academic transcripts, entrance exam scores</p>
+                </div>
+                <div class="highlight-box">
+                    <h4>📅 Important Dates</h4>
+                    <p>Application Deadline: March 31, 2025 | Admission: June 2025</p>
+                </div>
+                <div class="highlight-box">
+                    <h4>💰 Financial Aid</h4>
+                    <p>Scholarships and financial assistance available for eligible students</p>
+                </div>
+                <div class="highlight-box">
+                    <h4>🎓 Next Steps</h4>
+                    <p>Fill the form below to start your application journey</p>
+                </div>
+            </div>
+
+            <!-- Admission Form -->
+            <div class="form-container">
+                <h3>🎓 Online Admission Form</h3>
+                <p style="margin-bottom: 25px; color: #666;">Please fill out the form below with your information. All fields marked with * are required.</p>
+                
+                <form onsubmit="handleSubmit(event)">
+                    <!-- Personal Information -->
+                    <h4 style="color: #667eea; margin-bottom: 15px; margin-top: 20px;">Personal Information</h4>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth *</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender *</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address *</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State/Province *</label>
+                            <input type="text" id="state" name="state" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="zipcode">Zip/Postal Code *</label>
+                            <input type="text" id="zipcode" name="zipcode" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                    </div>
+
+                    <!-- Educational Background -->
+                    <h4 style="color: #667eea; margin-bottom: 15px; margin-top: 20px;">Educational Background</h4>
+                    
+                    <div class="form-group">
+                        <label for="program">Desired Program *</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select Program</option>
+                            <option value="bsc-cs">Bachelor of Science in Computer Science</option>
+                            <option value="bba">Bachelor of Business Administration</option>
+                            <option value="bsc-ce">Bachelor of Science in Civil Engineering</option>
+                            <option value="ba-english">Bachelor of Arts in English Literature</option>
+                            <option value="bsc-biotech">Bachelor of Science in Biotechnology</option>
+                            <option value="msc-ds">Master of Science in Data Science</option>
+                            <option value="mba">Master of Business Administration</option>
+                            <option value="bsc-me">Bachelor of Science in Mechanical Engineering</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="highschool">High School/College Name *</label>
+                            <input type="text" id="highschool" name="highschool" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="graduation">Graduation Year *</label>
+                            <input type="number" id="graduation" name="graduation" min="2000" max="2099" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gpa">GPA/Percentage *</label>
+                        <input type="number" id="gpa" name="gpa" step="0.01" min="0" max="4" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="examScore">Entrance Exam Score *</label>
+                        <input type="number" id="examScore" name="examScore" required>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <h4 style="color: #667eea; margin-bottom: 15px; margin-top: 20px;">Additional Information</h4>
+                    
+                    <div class="form-group">
+                        <label for="motivation">Why do you want to join Premier College? *</label>
+                        <textarea id="motivation" name="motivation" required placeholder="Share your academic goals and why you are interested in our institution..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="achievements">Academic/Co-curricular Achievements</label>
+                        <textarea id="achievements" name="achievements" placeholder="Share any awards, certifications, or notable achievements..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reference">Reference/Recommendation Letter</label>
+                        <input type="file" id="reference" name="reference" accept=".pdf,.doc,.docx">
+                    </div>
+
+                    <!-- Declaration -->
+                    <div class="form-group" style="margin-top: 25px; padding: 15px; background-color: #f9f9f9; border-left: 4px solid #DC143C; border-radius: 5px;">
+                        <label style="display: flex; align-items: flex-start; cursor: pointer;">
+                            <input type="checkbox" id="declaration" name="declaration" required style="width: auto; margin-right: 10px; margin-top: 3px;">
+                            <span>I hereby declare that the information provided above is true and accurate. I understand that providing false information may lead to rejection of my application. *</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="display: flex; align-items: flex-start; cursor: pointer;">
+                            <input type="checkbox" id="terms" name="terms" required style="width: auto; margin-right: 10px; margin-top: 3px;">
+                            <span>I agree to the terms and conditions and privacy policy of Premier College. *</span>
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                    <button type="reset" class="btn" style="width: 100%; margin-top: 10px;">Clear Form</button>
+                </form>
+            </div>
+
+            <!-- Additional Information -->
+            <div style="margin-top: 50px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                <h3>Important Information</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                    <div>
+                        <h4 style="color: #DC143C; margin-bottom: 10px;">📞 Need Help?</h4>
+                        <p>If you have any questions about the application process, please contact our Admissions Office:</p>
+                        <p><strong>Email:</strong> admissions@metbhujibal.edu</p>
+                        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                        <p><strong>Office Hours:</strong> Monday - Friday, 9 AM - 5 PM</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #DC143C; margin-bottom: 10px;">📋 Required Documents</h4>
+                        <ul style="margin-left: 20px; line-height: 1.8;">
+                            <li>High School Transcripts</li>
+                            <li>Entrance Exam Scores</li>
+                            <li>Letter of Recommendation (optional)</li>
+                            <li>Statement of Purpose</li>
+                            <li>Valid ID Proof</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: #DC143C; margin-bottom: 10px;">💰 Financial Aid</h4>
+                        <p>Premier College offers various scholarship options:</p>
+                        <ul style="margin-left: 20px; line-height: 1.8;">
+                            <li>Merit-based Scholarships</li>
+                            <li>Need-based Scholarships</li>
+                            <li>Talent-based Awards</li>
+                            <li>Flexible Payment Plans</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div>
+                <h4>About Us</h4>
+                <p>MET Bhujbal Knowledge City is committed to providing quality education and developing skilled professionals for a global marketplace.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <p><a href="courses.html">View Courses</a></p>
+                <p><a href="faculty.html">Meet Faculty</a></p>
+                <p><a href="admission.html">Apply Now</a></p>
+            </div>
+            <div>
+                <h4>Contact Info</h4>
+                <p>Email: info@metbhujibal.edu</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Education Lane, College City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MET Bhujbal Knowledge City. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            
+            // Show success message
+            alert(`Thank you for your application, ${firstName} ${lastName}!\n\nA confirmation email has been sent to ${email}.\n\nOur admissions team will review your application and contact you within 5-7 business days.`);
+            
+            // Reset form
+            document.querySelector('form').reset();
+        }
+    </script>
+</body>
+</html>
